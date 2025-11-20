@@ -1,0 +1,12 @@
+name = "azrael-proxy"
+compatibility_date = "2024-11-20"
+
+[deployment]
+# Isso diz à Cloudflare que é um CONTAINER real (não um Worker)
+mode = "container"
+
+[build]
+dockerfile = "Dockerfile"
+
+[vars]
+PORT = "8080"
